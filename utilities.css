@@ -1,0 +1,110 @@
+:root{
+    --primary-color: #453C67;
+    --secondary-color: #6D67E4 ;
+    --green-light: #46C2CB;
+    --yellow-light: #F2F7A1;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Nerko One', cursive;
+    color: #fff;
+    background-color: var(--secondary-color);
+    overflow-x: hidden;
+    height: 100vh;
+    display: grid;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+label {
+    font-size: 1.4rem;
+}
+input {
+    padding: .4rem .5rem;
+    outline: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+select{
+    padding: .2rem .5rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    outline: none;
+    font-family: sans-serif;
+    border-radius: 5px;
+}
+
+ul {
+    list-style: none;
+}
+li {
+    display: inline;
+}
+h2 {
+    font-size: 2rem;
+}
+
+.f-red {
+    color: rgb(207, 68, 17);
+}
+.f-normal {
+    color: yellow;
+}
+
+.f-easy{
+    color: green;
+}
+
+.btn {
+    padding: 1rem;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.btn:hover{
+    opacity: 0.8;
+}
+
+.btn-primary{
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+    background-color: var(--primary-color);
+}
+
+.btn-secondary{
+    color: white;
+    font-weight: bold;
+    font-size: 1.4rem;
+    background-color: var(--green-light);
+    border-radius: 10px;
+}
+button{
+    margin-top: 1rem;
+    border: none;
+}
+
+span {
+    margin-left: .5rem  ;
+    font-style:normal;
+}
+
+.btn-delete{
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.2rem;
+    background-color: rgb(222, 164, 16);
+}
+.btn-back{
+    color: black;
+    font-weight: bold;
+    font-size: 1.2rem;
+    background-color: #fff;
+}

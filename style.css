@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
+@import './utilities.css';
+/*Navigation Bar*/
+#navbar{
+    background-color: var(--primary-color);
+    height: 60px;
+}
+.navbar-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    padding: 0.5rem;
+}
+
+/*Input Section*/
+
+#input {
+    margin-top: 2rem;
+}
+.input-content{
+    margin: auto;
+    display: flex;
+    max-width: 700px;
+    padding: 0 1rem;
+    justify-content: space-around;
+}
+.input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: .5rem;
+}
+.info-table {
+    font-size: 1.5rem;
+    padding: 1rem;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+h4 {
+    font-size: 1.6;
+}
+.info-table span {
+    font-family: sans-serif;
+}
+
+/*Control Tasks*/
+
+.tasks-content {
+    
+    padding: 1rem; 
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+    justify-content: center;
+}
+
+.box {
+    position: relative;
+    font-family:sans-serif;
+    
+    width: 350px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: var(--primary-color);
+    color: #fff;
+    border-radius: 10px;
+    margin: auto .8rem .8rem 0;
+    line-height: 1.8rem;
+    box-shadow: 3px 3px 3px 1px black;
+    transition: all .5s;
+    padding: 1rem;
+}
+
+.box i{  
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    color: var(--green-light);
+    cursor: pointer;
+}
+
+.update{
+    background-color:#371B58;
+}
+
+.update-group {
+    display: flex;
+    justify-content: space-between;
+    display: none;
+}
+
+#error {
+    margin-top: .5rem;
+    font-size: 1.4rem;
+    font-family:sans-serif;
+    font-weight: BOLD;
+    color: coral;
+}
+#submit {
+    padding: .5rem;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+textarea{
+    padding: .5rem;
+    font-size: 1.2rem;
+    font-family: sans-serif;
+}
+
+
+/*Footer*/
+
+footer{
+    height: 60px;
+   justify-self: flex-end;
+    width: 100vw;
+    background-color: var(--primary-color);
+    align-self: flex-end;
+}
+
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+
+}
+
+
+@media (max-width:470px) {
+    .navbar-content h2 {
+        display: none;
+    }
+    #navbar {
+        background-color: inherit;
+    }
+}
+
+
+@media (max-width:540px) {
+    .input-content{
+        flex-direction: column;
+    }
+    .info-table{
+        font-size: 1.2rem;
+    }
+    .navbar-content i {
+        display: none;
+    }
+    
+}

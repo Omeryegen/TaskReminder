@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="utilities.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Task Reminder</title>
+  </head>
+  <body>
+    <nav id="navbar">
+      <div class="container">
+        <div class="navbar-content">
+          <i class="fa-solid fa-book-open fa-2xl"></i>
+          <h2>Task Reminder</h2>
+          <ul>
+            <li><a class="btn btn-primary" href="index.html">Home</a></li>
+            <li><a class="btn btn-primary" href="#">About</a></li>
+            <li>
+              <a class="btn btn-primary" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <section id="input">
+      <div class="container">
+        <div class="input-content">
+          <form>
+            <div class="input-group">
+              <label for="task-name">Task Name</label>
+              <input
+                placeholder="Example: Go to post office."
+                name="task-name"
+                id="task-name"
+                type="text"
+              />
+            </div>
+            <div class="input-group">
+              <label for="task-name">Deadline</label>
+              <input
+                placeholder="MM/DD/YYYY"
+                name="deadline"
+                id="deadline"
+                type="text"
+              />
+            </div>
+            <div class="input-group">
+              <label for="difficulty">How Difficult Is The Task?</label>
+              <select name="difficulty" id="difficulty">
+                <option value="choose-one">Choose One</option>
+                <option value="Difficult">Difficult</option>
+                <option value="Normal">Normal</option>
+                <option value="Easy">Easy</option>
+              </select>
+            </div>
+            <div class="input-group">
+              <label for="description">Describe Your Task</label>
+              <textarea
+                name="description"
+                id="description"
+                cols="30"
+                rows="3"
+              ></textarea>
+            </div>
+
+            <p id="error"></p>
+            <button id="submit" class="btn btn-secondary" type="submit">
+              Add Task
+            </button>
+            <div class="update-group">
+              <div>
+                <button id="update" class="btn btn-primary">Update</button>
+                <button id="delete" class="btn btn-delete">Delete</button>
+              </div>
+              <button id="back" class="btn btn-back">Back</button>
+            </div>
+          </form>
+          <div class="info-table">
+            <h4 id="total-task"></h4>
+            <h4 id="dif-task"></h4>
+            <h4 id="normal-task"></h4>
+            <h4 id="easy-task"></h4>
+            <h4 id="next-task"></h4>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="tasks">
+      <div class="container">
+        <div class="tasks-content"></div>
+      </div>
+    </section>
+    <footer>
+      <div class="footer-content">
+        <h3>Copyright@All Rights Reserved/2022</h3>
+      </div>
+    </footer>
+    <script src="java.js"></script>
+  </body>
+</html>
